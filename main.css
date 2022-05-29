@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    box-sizing: border-box;
+  }
+  body {
+    background: white;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(tomato,white);
+   
+    padding: 5px;
+  
+    
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .logo {
+    width: 120px;
+    margin-right: 80px;
+  }
+  .nav-left,
+  .nav-right {
+    display: flex;
+    align-items: center;
+  }
+  .nav-left ul li {
+    list-style: none;
+    display: inline-block;
+  }
+  .nav-left ul li img {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 38px;
+    margin: 0 10px;
+  }
+  .nav-user-icon img {
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  .nav-user-icon {
+    margin-left: 30px;
+  }
+  .search-box {
+    background: #efefef;
+    width: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+  }
+  .search-box img {
+    width: 18px;
+  }
+  .search-box input {
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border: 0;
+  
+  }
+  .container {
+    display: flex;
+    max-width: none;
+    padding: 13px;
+
+  }
+  .left-sidebar {
+    max-width: 250px;
+    flex-basis: 15%;
+    position: sticky;
+    border-radius: 10px;
+    margin-right: 10px;
+    background:linear-gradient(white,tomato);
+    padding: 10px;
+    top: 70px;
+    align-self: flex-start;
+  }
+  
+  .main-content {
+    flex-basis: 85%;
+    margin: 10px;
+    /* height: 100%; */
+  }
+  .imp-links a,
+  .shortcut-links a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #626262;
+    width: fit-content;
+  }
+  .imp-links a img {
+    width: 25px;
+    margin-right: 15px;
+  }
+  .imp-links a:last-child {
+    color: #1876f2;
+  }
+  .imp-links {
+    border-bottom: 5px solid #ccc;
+  }
+  .shortcut-links a img {
+    width: 60px;
+    border-radius: 4px;
+    margin-right: 15px;
+  }
+  .shortcut-links p {
+    margin: 25px 0;
+    color: #626262;
+    font-weight: 500;
+  }
+  .sidebar-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sidebar-title h4 {
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .sidebar-title a {
+    text-decoration: none;
+    color: #1876f2;
+    font-size: 12px;
+  }
+  
+  .sidebar-ads {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 4px;
+  }
+  .create{
+    margin: 5px;
+    margin-bottom: 20px;
+  }
+  
+  
+  
+
+
+/*post*/
+post{
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border: 1px solid #dfdfdf;
+  margin-top: 40px;
+}
+.profile-pic{
+  width: 30px;
+}
+.info{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.info .username{
+  width: auto;
+  font-weight: bold;
+  color: #000;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.info .options{
+  height: 10px;
+  cursor: pointer;
+}
+
+.info .user{
+  display: flex;
+  align-items: center;
+}
+
+.info .profile-pic{
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  background: none;
+}
+
+.info .profile-pic img{
+  border: none;
+  width: 40px;
+}
+
+.post-image{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.post-content{
+  width: 100%;
+  padding: 20px;
+}
+
+.likes{
+  font-weight: bold;
+}
+
+.description{
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.description span{
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.post-time{
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+}
+
+.comment-wrapper{
+  width: 100%;
+  height: 50px;
+  border-radius: 1px solid #dfdfdf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comment-wrapper .icon{
+  height: 30px;
+}
+
+.comment-box{
+  width: 80%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.comment-btn,
+.action-btn{
+  width: 70px;
+  height: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  font-size: 16px;
+  color: rgb(0, 162, 255);
+  opacity: 0.5;
+}
+
+.reaction-wrapper{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  margin-top: -20px;
+  align-items: center;
+}
+
+.reaction-wrapper .icon{
+  height: 25px;
+  margin: 0;
+  margin-right: 20px;
+}
+
+.reaction-wrapper .icon.save{
+  margin-left: auto;
+}
